@@ -45,6 +45,9 @@ public class HapticGrabber : MonoBehaviour
 
 		if (DisableUnityCollisionsWithTouchableObjects)
 			disableUnityCollisions();
+
+		//처음부터 잡고 있기
+		//grab();
 	}
 
 	void disableUnityCollisions()
@@ -78,6 +81,9 @@ public class HapticGrabber : MonoBehaviour
 	//! Update is called once per frame
 	void FixedUpdate () 
 	{
+		//grab();
+		/**/
+
 		bool newButtonStatus = hapticDevice.GetComponent<HapticPlugin>().Buttons [buttonID] == 1;
 		bool oldButtonStatus = buttonStatus;
 		buttonStatus = newButtonStatus;
@@ -108,8 +114,9 @@ public class HapticGrabber : MonoBehaviour
 		}
 
 		// Make sure haptics is ON if we're grabbing
-		if( grabbing && physicsToggleStyle != PhysicsToggleStyle.none)
+		if ( grabbing && physicsToggleStyle != PhysicsToggleStyle.none)
 			hapticDevice.GetComponent<HapticPlugin>().PhysicsManipulationEnabled = true;
+		
 		if (!grabbing && physicsToggleStyle == PhysicsToggleStyle.onGrab)
 			hapticDevice.GetComponent<HapticPlugin>().PhysicsManipulationEnabled = false;
 
