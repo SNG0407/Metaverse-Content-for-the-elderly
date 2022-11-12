@@ -18,8 +18,8 @@ public class HapticGrabber : MonoBehaviour
 
 	private  GameObject hapticDevice = null;   //!< Reference to the GameObject representing the Haptic Device
 	private bool buttonStatus = false;			//!< Is the button currently pressed?
-	private GameObject touching = null;			//!< Reference to the object currently touched
-	private GameObject grabbing = null;			//!< Reference to the object currently grabbed
+	private GameObject touching = null;         //!< Reference to the object currently touched
+	public GameObject grabbing;// = null;			//!< Reference to the object currently grabbed
 	private FixedJoint joint = null;			//!< The Unity physics joint created between the stylus and the object being grabbed.
 
 
