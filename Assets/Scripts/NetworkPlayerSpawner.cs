@@ -8,18 +8,18 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
     private GameObject spawnedPlayerPrefab;
     public static NetworkPlayerSpawner Instance;
 
-    //   private void Awake()
-    // {
-    //     var objs = FindObjectsOfType<NetworkPlayerSpawner>();
-    //     if(objs.Length == 1)
-    //     {
-    //         DontDestroyOnLoad(gameObject);
-    //     }
-    //     else
-    //     {
-    //         Destroy(gameObject);
-    //     }
-    // }
+    private void Awake()
+    {
+        var objs = FindObjectsOfType<NetworkPlayerSpawner>();
+        if (objs.Length == 1)
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         Instance = this;
