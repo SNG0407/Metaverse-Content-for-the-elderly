@@ -16450,8 +16450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultRooms:
-  - Name: XR Test
-    SceneName: XR Test
+  - Name: Test
+    SceneName: Test
     maxPlayer: 5
   - Name: 
     SceneName: 

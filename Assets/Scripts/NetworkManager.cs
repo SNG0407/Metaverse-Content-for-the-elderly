@@ -107,13 +107,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log(NetworkManager.Instance.PlayerName+" Joined");
         if(NetworkManager.Instance.PlayerName == "VRNetworkPlayer(1)")
         {
-            spawnedPlayerPrefab = PhotonNetwork.Instantiate(NetworkManager.Instance.PlayerName, new Vector3(0, 0, 0), transform.rotation);
+            spawnedPlayerPrefab = PhotonNetwork.Instantiate(NetworkManager.Instance.PlayerName, new Vector3(0, 1.1f, -1.6f), Quaternion.Euler(0, 0, 0));
         }
         else if(NetworkManager.Instance.PlayerName == "VRNetworkPlayer(2)"){
-            spawnedPlayerPrefab = PhotonNetwork.Instantiate(NetworkManager.Instance.PlayerName, new Vector3(1, 0, 1), Quaternion.Euler(0, 180, 0));
+            spawnedPlayerPrefab = PhotonNetwork.Instantiate(NetworkManager.Instance.PlayerName, new Vector3(1, 1.1f, 1.6f), Quaternion.Euler(0, 180, 0));
         }
         else{
-            spawnedPlayerPrefab = PhotonNetwork.Instantiate(NetworkManager.Instance.PlayerName, new Vector3(0, 0, 1), Quaternion.Euler(0, 180, 0));
+            spawnedPlayerPrefab = PhotonNetwork.Instantiate(NetworkManager.Instance.PlayerName, new Vector3(1, 1.1f, -1.6f), Quaternion.Euler(0, 0, 0));
 
         }
     }
