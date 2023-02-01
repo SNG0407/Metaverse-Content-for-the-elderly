@@ -22,4 +22,9 @@ public class Uimanager : MonoBehaviour
          Debug.Log("LoadScene");
          SceneManager.LoadScene("Mainground");
     }
+    public void FriendsBtn()
+    {
+         Debug.Log("LoadScene");
+         SceneManager.LoadScene("FriendPlace");
+    }
 }
