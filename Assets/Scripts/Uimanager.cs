@@ -27,4 +27,10 @@ public class Uimanager : MonoBehaviour
          Debug.Log("LoadScene");
          SceneManager.LoadScene("FriendPlace");
     }
+    //FamilyPlace
+      public void FamilyBtn()
+    {
+         Debug.Log("LoadScene");
+         SceneManager.LoadScene("FamilyPlace");
+    }
 }

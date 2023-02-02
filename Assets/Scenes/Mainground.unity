@@ -3534,9 +3534,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 561085047}
         m_TargetAssemblyTypeName: Uimanager, Assembly-CSharp
-        m_MethodName: Startbtn
+        m_MethodName: FamilyBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4738,7 +4738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0.286, y: -114.274, z: -0.239}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.2088623, y: 1.9759521}
+  m_AnchoredPosition: {x: 1.2088623, y: 1.112}
   m_SizeDelta: {x: 480, y: 549.5222}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &959183309
