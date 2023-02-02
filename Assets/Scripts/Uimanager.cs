@@ -28,7 +28,7 @@ public class Uimanager : MonoBehaviour
       public void Startbtn()
     {
          Debug.Log("LoadScene");
-         SceneManager.LoadScene("Mainground");
+         SceneManager.LoadScene("MainPark");
     }
     public void FriendsBtn()
     {
@@ -51,6 +51,10 @@ public class Uimanager : MonoBehaviour
         GhostFriend2.SetActive(false);
 
         ps.Play();
-        ps.gameObject.SetActive(true);
+        //ps.gameObject.SetActive(true);
+    }
+    public void GoBackBtn()
+    {
+        SceneManager.LoadScene("MainPark");
     }
 }

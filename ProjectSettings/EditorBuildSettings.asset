@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: 9fdb0f46d526c5d4288b747a07152f4d
   - enabled: 1
-    path: Assets/Scenes/Mainground.unity
+    path: Assets/Scenes/MainPark.unity
     guid: 49afbca7b361ea44c8d2a900d89399f9
   - enabled: 1
     path: Assets/Scenes/FriendPlace.unity

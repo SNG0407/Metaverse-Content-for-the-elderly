@@ -752,7 +752,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play
+  m_Text: Go Back
 --- !u!222 &238323672
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2281,6 +2281,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 153de972ff06cd140b8ec48132bf8420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aliveFriend1: {fileID: 0}
+  aliveFriend2: {fileID: 0}
+  GhostFriend1: {fileID: 0}
+  GhostFriend2: {fileID: 0}
+  ps: {fileID: 0}
 --- !u!4 &561085048
 Transform:
   m_ObjectHideFlags: 0
@@ -2974,9 +2979,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 561085047}
         m_TargetAssemblyTypeName: Uimanager, Assembly-CSharp
-        m_MethodName: Startbtn
+        m_MethodName: GoBackBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8332,9 +8337,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Play games with your own family.
-
-'
+  m_Text: You can go back to the main part
 --- !u!222 &1940505526
 CanvasRenderer:
   m_ObjectHideFlags: 0
