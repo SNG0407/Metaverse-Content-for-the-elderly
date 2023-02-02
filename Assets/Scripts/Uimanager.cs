@@ -50,8 +50,8 @@ public class Uimanager : MonoBehaviour
         GhostFriend1.SetActive(false);
         GhostFriend2.SetActive(false);
 
+        ps.gameObject.SetActive(true);
         ps.Play();
-        //ps.gameObject.SetActive(true);
     }
     public void GoBackBtn()
     {
