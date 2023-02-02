@@ -13,6 +13,8 @@ public class Uimanager : MonoBehaviour
     public GameObject GhostFriend1;  
     public GameObject GhostFriend2;  
 
+    public GameObject PetUI;  
+
     public ParticleSystem ps; 
     // Start is called before the first frame update
     void Start()
@@ -56,5 +58,10 @@ public class Uimanager : MonoBehaviour
     public void GoBackBtn()
     {
         SceneManager.LoadScene("MainPark");
+    }
+
+    public void petBtn()
+    {
+        PetUI.SetActive(true);
     }
 }
