@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class Uimanager : MonoBehaviour
 {
+
+    public GameObject aliveFriend1;  
+    public GameObject aliveFriend2;  
+
+    public GameObject GhostFriend1;  
+    public GameObject GhostFriend2;  
+
+    public ParticleSystem ps; 
     // Start is called before the first frame update
     void Start()
     {
@@ -32,5 +40,17 @@ public class Uimanager : MonoBehaviour
     {
          Debug.Log("LoadScene");
          SceneManager.LoadScene("FamilyPlace");
+    }
+
+    public void aliveBtn()
+    {
+        aliveFriend1.SetActive(true);
+        aliveFriend2.SetActive(true);
+
+        GhostFriend1.SetActive(false);
+        GhostFriend2.SetActive(false);
+
+        ps.Play();
+        ps.gameObject.SetActive(true);
     }
 }
